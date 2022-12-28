@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>xiaoyang</title>
+	</head>
+	<body>
+		<div id="start">
+			<input id="yh" type="text">
+			<button onclick="copy()">复制</button>
+			<input id="yhh" type="text"><br />
+			<span id="yhhh" style="color:blue;"></span>
+		</div>
+	</body>
+	<script>
+		function copy() {
+			var sun = document.getElementById("yh").value;
+			document.getElementById("yhh").value = sun;
+			document.getElementById("yhhh").innerHTML = "复制成功!!!";
+		}
+	</script>
+</html>
